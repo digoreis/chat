@@ -1,0 +1,403 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1856F22C1CF01E1F002615F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1856F22B1CF01E1F002615F0 /* AppDelegate.swift */; };
+		1856F22E1CF01E1F002615F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1856F22D1CF01E1F002615F0 /* ViewController.swift */; };
+		1856F2311CF01E1F002615F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1856F22F1CF01E1F002615F0 /* Main.storyboard */; };
+		1856F2331CF01E1F002615F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1856F2321CF01E1F002615F0 /* Assets.xcassets */; };
+		1856F2361CF01E1F002615F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1856F2341CF01E1F002615F0 /* LaunchScreen.storyboard */; };
+		1856F2411CF01E1F002615F0 /* HootsuiteChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1856F2401CF01E1F002615F0 /* HootsuiteChatTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1856F23D1CF01E1F002615F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1856F2201CF01E1F002615F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1856F2271CF01E1F002615F0;
+			remoteInfo = HootsuiteChat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1856F2281CF01E1F002615F0 /* HootsuiteChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HootsuiteChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1856F22B1CF01E1F002615F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1856F22D1CF01E1F002615F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1856F2301CF01E1F002615F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1856F2321CF01E1F002615F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1856F2351CF01E1F002615F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1856F2371CF01E1F002615F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1856F23C1CF01E1F002615F0 /* HootsuiteChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HootsuiteChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1856F2401CF01E1F002615F0 /* HootsuiteChatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HootsuiteChatTests.swift; sourceTree = "<group>"; };
+		1856F2421CF01E1F002615F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1856F2251CF01E1F002615F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1856F2391CF01E1F002615F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1856F21F1CF01E1F002615F0 = {
+			isa = PBXGroup;
+			children = (
+				1856F22A1CF01E1F002615F0 /* HootsuiteChat */,
+				1856F23F1CF01E1F002615F0 /* HootsuiteChatTests */,
+				1856F2291CF01E1F002615F0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1856F2291CF01E1F002615F0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1856F2281CF01E1F002615F0 /* HootsuiteChat.app */,
+				1856F23C1CF01E1F002615F0 /* HootsuiteChatTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1856F22A1CF01E1F002615F0 /* HootsuiteChat */ = {
+			isa = PBXGroup;
+			children = (
+				1856F22B1CF01E1F002615F0 /* AppDelegate.swift */,
+				1856F22D1CF01E1F002615F0 /* ViewController.swift */,
+				1856F22F1CF01E1F002615F0 /* Main.storyboard */,
+				1856F2321CF01E1F002615F0 /* Assets.xcassets */,
+				1856F2341CF01E1F002615F0 /* LaunchScreen.storyboard */,
+				1856F2371CF01E1F002615F0 /* Info.plist */,
+			);
+			path = HootsuiteChat;
+			sourceTree = "<group>";
+		};
+		1856F23F1CF01E1F002615F0 /* HootsuiteChatTests */ = {
+			isa = PBXGroup;
+			children = (
+				1856F2401CF01E1F002615F0 /* HootsuiteChatTests.swift */,
+				1856F2421CF01E1F002615F0 /* Info.plist */,
+			);
+			path = HootsuiteChatTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1856F2271CF01E1F002615F0 /* HootsuiteChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1856F2451CF01E1F002615F0 /* Build configuration list for PBXNativeTarget "HootsuiteChat" */;
+			buildPhases = (
+				1856F2241CF01E1F002615F0 /* Sources */,
+				1856F2251CF01E1F002615F0 /* Frameworks */,
+				1856F2261CF01E1F002615F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HootsuiteChat;
+			productName = HootsuiteChat;
+			productReference = 1856F2281CF01E1F002615F0 /* HootsuiteChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1856F23B1CF01E1F002615F0 /* HootsuiteChatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1856F2481CF01E1F002615F0 /* Build configuration list for PBXNativeTarget "HootsuiteChatTests" */;
+			buildPhases = (
+				1856F2381CF01E1F002615F0 /* Sources */,
+				1856F2391CF01E1F002615F0 /* Frameworks */,
+				1856F23A1CF01E1F002615F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1856F23E1CF01E1F002615F0 /* PBXTargetDependency */,
+			);
+			name = HootsuiteChatTests;
+			productName = HootsuiteChatTests;
+			productReference = 1856F23C1CF01E1F002615F0 /* HootsuiteChatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1856F2201CF01E1F002615F0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Rodrigo Reis";
+				TargetAttributes = {
+					1856F2271CF01E1F002615F0 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					1856F23B1CF01E1F002615F0 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 1856F2271CF01E1F002615F0;
+					};
+				};
+			};
+			buildConfigurationList = 1856F2231CF01E1F002615F0 /* Build configuration list for PBXProject "HootsuiteChat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1856F21F1CF01E1F002615F0;
+			productRefGroup = 1856F2291CF01E1F002615F0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1856F2271CF01E1F002615F0 /* HootsuiteChat */,
+				1856F23B1CF01E1F002615F0 /* HootsuiteChatTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1856F2261CF01E1F002615F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1856F2361CF01E1F002615F0 /* LaunchScreen.storyboard in Resources */,
+				1856F2331CF01E1F002615F0 /* Assets.xcassets in Resources */,
+				1856F2311CF01E1F002615F0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1856F23A1CF01E1F002615F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1856F2241CF01E1F002615F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1856F22E1CF01E1F002615F0 /* ViewController.swift in Sources */,
+				1856F22C1CF01E1F002615F0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1856F2381CF01E1F002615F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1856F2411CF01E1F002615F0 /* HootsuiteChatTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1856F23E1CF01E1F002615F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1856F2271CF01E1F002615F0 /* HootsuiteChat */;
+			targetProxy = 1856F23D1CF01E1F002615F0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1856F22F1CF01E1F002615F0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1856F2301CF01E1F002615F0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1856F2341CF01E1F002615F0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1856F2351CF01E1F002615F0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1856F2431CF01E1F002615F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1856F2441CF01E1F002615F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1856F2461CF01E1F002615F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HootsuiteChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.reis.HootsuiteChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1856F2471CF01E1F002615F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HootsuiteChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.reis.HootsuiteChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1856F2491CF01E1F002615F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HootsuiteChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.reis.HootsuiteChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HootsuiteChat.app/HootsuiteChat";
+			};
+			name = Debug;
+		};
+		1856F24A1CF01E1F002615F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HootsuiteChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.reis.HootsuiteChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HootsuiteChat.app/HootsuiteChat";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1856F2231CF01E1F002615F0 /* Build configuration list for PBXProject "HootsuiteChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1856F2431CF01E1F002615F0 /* Debug */,
+				1856F2441CF01E1F002615F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1856F2451CF01E1F002615F0 /* Build configuration list for PBXNativeTarget "HootsuiteChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1856F2461CF01E1F002615F0 /* Debug */,
+				1856F2471CF01E1F002615F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1856F2481CF01E1F002615F0 /* Build configuration list for PBXNativeTarget "HootsuiteChatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1856F2491CF01E1F002615F0 /* Debug */,
+				1856F24A1CF01E1F002615F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1856F2201CF01E1F002615F0 /* Project object */;
+}
