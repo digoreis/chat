@@ -88,7 +88,6 @@ class MainViewController: UIViewController , UITableViewDelegate , UITableViewDa
         channels  =  database.child("channels")
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(MainViewController.keyboardWasShown(_:)), name:UIKeyboardWillShowNotification, object: nil)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(MainViewController.keyboardHide(_:)), name:UIKeyboardWillHideNotification, object: nil)
-        navigationController?.navigationItem.title = "Channels"
         commandButtons()
         if FIRAuth.auth()?.currentUser?.providerID.containsString("twitter") ?? false {
             twitterEmail(self)
@@ -96,7 +95,7 @@ class MainViewController: UIViewController , UITableViewDelegate , UITableViewDa
     }
     
     override func viewDidAppear(animated: Bool) {
-        navigationController?.navigationItem.title = "Channels"
+        navigationController?.navigationBar.topItem?.title = "Channels"
     }
     
     deinit {

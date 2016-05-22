@@ -39,6 +39,7 @@ class ChatRoomController: UIViewController , UITableViewDelegate, UITableViewDat
     @IBOutlet var tableView : UITableView?
     @IBOutlet var messageInput : UITextView?
     @IBOutlet var typingLabel : UILabel?
+    @IBOutlet var sendButton : UIButton?
     
     
     @IBOutlet var keyboardInputConstraint : NSLayoutConstraint?
@@ -51,6 +52,8 @@ class ChatRoomController: UIViewController , UITableViewDelegate, UITableViewDat
             messagesQuery?.observeEventType(.ChildAdded) { (snapshot: FIRDataSnapshot) in
                 if let id = snapshot.value?["userName"] as? String , text = snapshot.value?["text"] as? String , sendIn = snapshot.value?["sendIn"] as? Double, avatar = snapshot.value?["avatar"] as? String {
                     self.addMessage(Message(userID : id, text : text, sendIn: sendIn, avatarURL: avatar))
+                    self.tableView?.reloadData()
+                    self.goToBottom()
                 }
                 
             }
@@ -116,6 +119,10 @@ class ChatRoomController: UIViewController , UITableViewDelegate, UITableViewDat
         commandButtons()
         tableView?.rowHeight = UITableViewAutomaticDimension
         tableView?.estimatedRowHeight = 160.0
+        let origImage = UIImage(named: "speech-ballon");
+        let tintedImage = origImage?.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
+        sendButton?.setImage(tintedImage, forState: .Normal)
+        sendButton?.tintColor = UIColor.whiteColor()
     }
     
     deinit {
@@ -264,9 +271,10 @@ class ChatRoomController: UIViewController , UITableViewDelegate, UITableViewDat
     }
     
     func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-
-        return CGFloat(0)
+        let size = tableView.frame.height -  CGFloat(list.count * 100)
+        return size
     }
+    
     
     private func goToBottom(){
             tableView?.scrollToBottom()

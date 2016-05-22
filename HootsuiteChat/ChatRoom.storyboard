@@ -166,6 +166,7 @@
                         <outlet property="inputTextHeight" destination="jUH-Iz-HHx" id="UgZ-Bh-mnD"/>
                         <outlet property="keyboardInputConstraint" destination="i0w-h5-HtM" id="yeB-NZ-UA8"/>
                         <outlet property="messageInput" destination="7fN-2f-Hvi" id="cdG-XW-if3"/>
+                        <outlet property="sendButton" destination="nKR-ih-NoJ" id="z4S-2P-nG4"/>
                         <outlet property="tableView" destination="yZD-oB-PtY" id="tZg-Nu-1IZ"/>
                         <outlet property="typingLabel" destination="nBQ-Sp-VJR" id="HVM-7d-AwE"/>
                         <outlet property="viewInputTextHeight" destination="3cC-WO-h5I" id="JDZ-HE-RAy"/>
@@ -177,6 +178,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="speech-ballon" width="512" height="512"/>
+        <image name="speech-ballon" width="256" height="256"/>
     </resources>
 </document>
