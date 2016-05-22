@@ -12,13 +12,6 @@ import FirebaseDatabase
 import FirebaseAuth
 import Haneke
 
-struct Channel {
-    let key : String
-    let id : String
-    let name : String
-    let topic : String
-}
-
 class MainViewController: UIViewController , UITableViewDelegate , UITableViewDataSource {
     
     @IBOutlet var textNameChannel : UITextField?
@@ -29,6 +22,9 @@ class MainViewController: UIViewController , UITableViewDelegate , UITableViewDa
     
     var numberChannel = 0
     var list  = [Channel]()
+    
+    var database : FIRDatabaseReference?
+    
     var channels : FIRDatabaseReference? = nil {
         didSet {
             let messagesQuery = channels?.queryOrderedByKey()
@@ -84,8 +80,8 @@ class MainViewController: UIViewController , UITableViewDelegate , UITableViewDa
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let database = FIRDatabase.database().reference()
-        channels  =  database.child("channels")
+        database = FIRDatabase.database().reference()
+        channels  =  database?.child("channels")
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(MainViewController.keyboardWasShown(_:)), name:UIKeyboardWillShowNotification, object: nil)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(MainViewController.keyboardHide(_:)), name:UIKeyboardWillHideNotification, object: nil)
         commandButtons()
@@ -127,16 +123,9 @@ class MainViewController: UIViewController , UITableViewDelegate , UITableViewDa
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
             let item = list[indexPath.row]
-            let database = FIRDatabase.database().reference()
-            let messages  =  database.child("channels/\(item.key)/messages")
-            let typings  =  database.child("channels/\(item.key)/typings")
             let storyboard = UIStoryboard(name: "ChatRoom", bundle: nil)
             if let vc = storyboard.instantiateViewControllerWithIdentifier("ChatVC") as? ChatRoomController {
-                vc.messages = messages
-                vc.typings = typings
-                vc.title = item.name
-                vc.channelKey = item.key
-                vc.navigationItem.prompt = item.topic
+                vc.chat = ChatRoom(title: item.name, chatID: "channels/\(item.key)", topic: item.topic)
                 self.navigationController?.pushViewController(vc, animated: true)
             }
     }

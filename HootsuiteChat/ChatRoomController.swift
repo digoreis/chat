@@ -11,28 +11,25 @@ import Firebase
 import FirebaseDatabase
 import FirebaseAuth
 
-
-struct Message {
-    let userID : String
-    let text : String
-    let sendIn : Double
-    let avatarURL : String
-}
-
-struct Typing {
-    let name : String
-    let key : String
-}
 class ChatRoomController: UIViewController , UITableViewDelegate, UITableViewDataSource, UITextViewDelegate {
     
     var list = [Message]()
     var typing = [Typing]()
     
-    private var channel : FIRDatabaseReference? = nil
-    var channelKey : String? = nil {
+    private var channel : FIRDatabaseReference? = nil {
         didSet {
-            let database = FIRDatabase.database().reference()
-            channel  =  database.child("channels/\(channelKey!)")
+            messages = channel?.child("messages")
+            typings = channel?.child("typings")
+        }
+    }
+    var chat : ChatRoom? = nil {
+        didSet {
+            if let item = chat {
+                let database = FIRDatabase.database().reference()
+                channel  =  database.child(item.chatID)
+                self.title = item.title
+                self.navigationItem.prompt = item.topic
+            }
         }
     }
     
@@ -40,6 +37,7 @@ class ChatRoomController: UIViewController , UITableViewDelegate, UITableViewDat
     @IBOutlet var messageInput : UITextView?
     @IBOutlet var typingLabel : UILabel?
     @IBOutlet var sendButton : UIButton?
+    @IBOutlet var keyboardICon : UIImageView?
     
     
     @IBOutlet var keyboardInputConstraint : NSLayoutConstraint?
@@ -80,8 +78,10 @@ class ChatRoomController: UIViewController , UITableViewDelegate, UITableViewDat
                     self.typing.append(Typing(name : id, key: snapshot.key))
                     if let names = self.generateTypingString() {
                         self.typingLabel?.text = "Typing \(names)"
+                        self.keyboardICon?.hidden = false
                     } else {
                         self.typingLabel?.text = ""
+                        self.keyboardICon?.hidden =  true
                     }
                 }
                 
@@ -93,8 +93,10 @@ class ChatRoomController: UIViewController , UITableViewDelegate, UITableViewDat
                             self.typing.removeAtIndex(index)
                             if let names = self.generateTypingString() {
                                 self.typingLabel?.text = "Typing \(names)"
+                                self.keyboardICon?.hidden = false
                             } else {
                                 self.typingLabel?.text = ""
+                                self.keyboardICon?.hidden = true
                             }
                         }
                     }
@@ -204,6 +206,8 @@ class ChatRoomController: UIViewController , UITableViewDelegate, UITableViewDat
         tableView?.endUpdates()
         messageInput?.resignFirstResponder()
         messageInput?.text = "Say anything ..."
+        inputTextHeight?.constant = 30
+        viewInputTextHeight?.constant = 50
         goToBottom()
     }
     
@@ -307,14 +311,4 @@ class ChatRoomController: UIViewController , UITableViewDelegate, UITableViewDat
         return false
     }
 
-}
-
-extension UITableView {
-    
-    func scrollToBottom(){
-        let offSetY = self.contentSize.height - self.frame.size.height + self.contentInset.bottom
-        UIView.animateWithDuration(0.33) { 
-            self.setContentOffset(CGPoint(x: 0, y: offSetY), animated: false)
-        }
-    }
 }

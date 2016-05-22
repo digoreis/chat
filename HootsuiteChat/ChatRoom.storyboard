@@ -136,7 +136,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nBQ-Sp-VJR">
-                                <rect key="frame" x="30" y="535" width="540" height="10"/>
+                                <rect key="frame" x="47" y="535" width="523" height="10"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="10" id="0uv-LJ-y6K"/>
                                 </constraints>
@@ -144,16 +144,25 @@
                                 <color key="textColor" red="0.70196078429999997" green="0.61960784310000006" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView hidden="YES" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="keyboard" translatesAutoresizingMaskIntoConstraints="NO" id="HI1-DI-SZv">
+                                <rect key="frame" x="20" y="534" width="14" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14" id="Htx-X5-h0f"/>
+                                    <constraint firstAttribute="width" constant="14" id="Onz-zm-vWO"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="M2H-cv-hMi" firstAttribute="top" secondItem="yZD-oB-PtY" secondAttribute="bottom" constant="16" id="BuJ-4S-SOf"/>
+                            <constraint firstItem="nBQ-Sp-VJR" firstAttribute="leading" secondItem="HI1-DI-SZv" secondAttribute="trailing" constant="13" id="ISx-rR-aGR"/>
                             <constraint firstAttribute="trailingMargin" secondItem="nBQ-Sp-VJR" secondAttribute="trailing" constant="10" id="PFr-qe-kr3"/>
                             <constraint firstAttribute="trailingMargin" secondItem="yZD-oB-PtY" secondAttribute="trailing" constant="-20" id="Pv6-KA-Xff"/>
                             <constraint firstItem="yZD-oB-PtY" firstAttribute="top" secondItem="SzI-se-WL7" secondAttribute="bottom" constant="8" id="cD0-uC-xqW"/>
                             <constraint firstAttribute="trailingMargin" secondItem="M2H-cv-hMi" secondAttribute="trailing" constant="-20" id="eUD-6i-4Cg"/>
-                            <constraint firstItem="nBQ-Sp-VJR" firstAttribute="leading" secondItem="bOa-ej-Ogh" secondAttribute="leadingMargin" constant="10" id="g7Y-a9-VvC"/>
                             <constraint firstItem="zp6-yE-Dl2" firstAttribute="top" secondItem="M2H-cv-hMi" secondAttribute="bottom" id="i0w-h5-HtM"/>
+                            <constraint firstItem="HI1-DI-SZv" firstAttribute="top" secondItem="yZD-oB-PtY" secondAttribute="bottom" id="iZy-cm-cIL"/>
+                            <constraint firstItem="HI1-DI-SZv" firstAttribute="leading" secondItem="bOa-ej-Ogh" secondAttribute="leadingMargin" id="nSG-hq-53x"/>
                             <constraint firstItem="yZD-oB-PtY" firstAttribute="leading" secondItem="bOa-ej-Ogh" secondAttribute="leadingMargin" constant="-20" id="veG-mT-g99"/>
                             <constraint firstItem="M2H-cv-hMi" firstAttribute="leading" secondItem="bOa-ej-Ogh" secondAttribute="leadingMargin" constant="-20" id="veZ-dX-Ugx"/>
                             <constraint firstItem="nBQ-Sp-VJR" firstAttribute="top" secondItem="yZD-oB-PtY" secondAttribute="bottom" constant="1" id="zBa-sN-I03"/>
@@ -164,6 +173,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="inputTextHeight" destination="jUH-Iz-HHx" id="UgZ-Bh-mnD"/>
+                        <outlet property="keyboardICon" destination="HI1-DI-SZv" id="huH-Yn-tbm"/>
                         <outlet property="keyboardInputConstraint" destination="i0w-h5-HtM" id="yeB-NZ-UA8"/>
                         <outlet property="messageInput" destination="7fN-2f-Hvi" id="cdG-XW-if3"/>
                         <outlet property="sendButton" destination="nKR-ih-NoJ" id="z4S-2P-nG4"/>
@@ -178,6 +188,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="keyboard" width="22" height="22"/>
         <image name="speech-ballon" width="256" height="256"/>
     </resources>
 </document>
