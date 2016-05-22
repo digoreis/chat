@@ -120,7 +120,7 @@ class ChatRoomController: UIViewController , UITableViewDelegate, UITableViewDat
         goToBottom()
         commandButtons()
         tableView?.rowHeight = UITableViewAutomaticDimension
-        tableView?.estimatedRowHeight = 160.0
+        tableView?.estimatedRowHeight = 280.0
         let origImage = UIImage(named: "speech-ballon");
         let tintedImage = origImage?.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
         sendButton?.setImage(tintedImage, forState: .Normal)
@@ -156,7 +156,6 @@ class ChatRoomController: UIViewController , UITableViewDelegate, UITableViewDat
         
         self.presentViewController(alert, animated: true, completion: nil)
         
-        
     }
     
     private func changeValueTopic(value : String){
@@ -172,31 +171,6 @@ class ChatRoomController: UIViewController , UITableViewDelegate, UITableViewDat
     }
     
 
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 1
-    }
-    
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        switch(section) {
-        case 0 : return list.count
-        default : return 0
-        }
-        
-    }
-    
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("ChatTextCell") as? ChatTextCell ?? ChatTextCell(style: .Subtitle, reuseIdentifier: "ChatTextCell")
-        cell.fill(list[indexPath.row])
-        return cell
-    }
-    
-    func tableView(tableView: UITableView, didEndDisplayingHeaderView view: UIView, forSection section: Int) {
-        goToBottom()
-    }
-    
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        
-    }
     private func addMessage(message : Message) {
         list.append(message)
         tableView?.beginUpdates()
@@ -211,7 +185,7 @@ class ChatRoomController: UIViewController , UITableViewDelegate, UITableViewDat
         goToBottom()
     }
     
-    private func startTyping(name : String) {
+    func startTyping(name : String) {
         
         if let itemRef = typings?.childByAutoId() {
             let messageItem = [
@@ -221,7 +195,7 @@ class ChatRoomController: UIViewController , UITableViewDelegate, UITableViewDat
         }
     }
     
-    private func stopTyping(name : String) {
+    func stopTyping(name : String) {
         if let item = typing.filter({ $0.name == name}).first {
             let delete = typings?.child(item.key)
             delete?.removeValue()
@@ -243,72 +217,8 @@ class ChatRoomController: UIViewController , UITableViewDelegate, UITableViewDat
         }
     }
     
-    func keyboardWasShown(notification: NSNotification) {
-        var info = notification.userInfo!
-        let keyboardFrame: CGRect = (info[UIKeyboardFrameEndUserInfoKey] as! NSValue).CGRectValue()
-        UIView.animateWithDuration(0.1, animations: { () -> Void in
-            self.keyboardInputConstraint?.constant = keyboardFrame.size.height
-        }) { status in
-            if status {
-                self.goToBottom()
-            }
-        }
-    }
     
-    func keyboardHide(notification: NSNotification) {
-        
-        UIView.animateWithDuration(0.1, animations: { () -> Void in
-            self.keyboardInputConstraint?.constant = 0
-        }) { status in
-            if status {
-                self.goToBottom()
-            }
-        }
-        
-    }
-    
-    
-    func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let headerView = UIView(frame: CGRect.zero)
-        headerView.userInteractionEnabled = false
-        return headerView
-    }
-    
-    func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        let size = tableView.frame.height -  CGFloat(list.count * 100)
-        return size
-    }
-    
-    
-    private func goToBottom(){
-            tableView?.scrollToBottom()
-    }
-    
-    func textViewDidBeginEditing(textView: UITextView) {
-        textView.text = ""
-        startTyping(FIRAuth.auth()?.currentUser?.displayName ?? "Anonymous")
-    }
-    
-    func textViewDidEndEditing(textView: UITextView) {
-        if textView.text == "" {
-            textView.text = "Say anything ..."
-        }
-        stopTyping(FIRAuth.auth()?.currentUser?.displayName ?? "Anonymous")
-    }
-    
-    func textView(textView: UITextView, shouldChangeTextInRange range: NSRange, replacementText text: String) -> Bool {
-        let changeValue = textView.contentSize.height  - (inputTextHeight?.constant ?? 0)
-        inputTextHeight?.constant = textView.contentSize.height
-        viewInputTextHeight?.constant = (viewInputTextHeight?.constant ?? 0) + changeValue
-        UIView.animateWithDuration(0.33) {
-            self.view.layoutIfNeeded()
-        }
-        
-        if ((textView.text.characters.count + text.characters.count) <= 200) {
-            return true
-        }
- 
-        return false
-    }
 
+    
+    
 }

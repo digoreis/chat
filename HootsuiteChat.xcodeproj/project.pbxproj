@@ -19,6 +19,9 @@
 		1862A2711CF201D000A3BEDD /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1862A2701CF201D000A3BEDD /* Models.swift */; };
 		1862A2741CF2024A00A3BEDD /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1862A2731CF2024A00A3BEDD /* UITableView.swift */; };
 		1862A2761CF2027500A3BEDD /* NSDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1862A2751CF2027500A3BEDD /* NSDate.swift */; };
+		1862A2781CF20FEA00A3BEDD /* UITableView+ChatRoomController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1862A2771CF20FEA00A3BEDD /* UITableView+ChatRoomController.swift */; };
+		1862A27A1CF2110D00A3BEDD /* Keyboard+ChatRoomController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1862A2791CF2110D00A3BEDD /* Keyboard+ChatRoomController.swift */; };
+		1862A27C1CF2116100A3BEDD /* UITextView+ChatRoomController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1862A27B1CF2116100A3BEDD /* UITextView+ChatRoomController.swift */; };
 		187924511CF0373B003255F5 /* ChatRoom.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187924501CF0373B003255F5 /* ChatRoom.storyboard */; };
 		187924531CF03A86003255F5 /* ChatRoomController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187924521CF03A86003255F5 /* ChatRoomController.swift */; };
 		187924551CF09734003255F5 /* ChannelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187924541CF09734003255F5 /* ChannelCell.swift */; };
@@ -54,6 +57,9 @@
 		1862A2701CF201D000A3BEDD /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		1862A2731CF2024A00A3BEDD /* UITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
 		1862A2751CF2027500A3BEDD /* NSDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDate.swift; sourceTree = "<group>"; };
+		1862A2771CF20FEA00A3BEDD /* UITableView+ChatRoomController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+ChatRoomController.swift"; sourceTree = "<group>"; };
+		1862A2791CF2110D00A3BEDD /* Keyboard+ChatRoomController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Keyboard+ChatRoomController.swift"; sourceTree = "<group>"; };
+		1862A27B1CF2116100A3BEDD /* UITextView+ChatRoomController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+ChatRoomController.swift"; sourceTree = "<group>"; };
 		187924501CF0373B003255F5 /* ChatRoom.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ChatRoom.storyboard; sourceTree = "<group>"; };
 		187924521CF03A86003255F5 /* ChatRoomController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatRoomController.swift; sourceTree = "<group>"; };
 		187924541CF09734003255F5 /* ChannelCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelCell.swift; sourceTree = "<group>"; };
@@ -187,6 +193,9 @@
 			children = (
 				187924521CF03A86003255F5 /* ChatRoomController.swift */,
 				187924571CF0C493003255F5 /* ChatTextCell.swift */,
+				1862A2771CF20FEA00A3BEDD /* UITableView+ChatRoomController.swift */,
+				1862A2791CF2110D00A3BEDD /* Keyboard+ChatRoomController.swift */,
+				1862A27B1CF2116100A3BEDD /* UITextView+ChatRoomController.swift */,
 			);
 			name = ChatRoom;
 			sourceTree = "<group>";
@@ -370,7 +379,10 @@
 				1862A2761CF2027500A3BEDD /* NSDate.swift in Sources */,
 				187924531CF03A86003255F5 /* ChatRoomController.swift in Sources */,
 				1862A2741CF2024A00A3BEDD /* UITableView.swift in Sources */,
+				1862A27A1CF2110D00A3BEDD /* Keyboard+ChatRoomController.swift in Sources */,
+				1862A27C1CF2116100A3BEDD /* UITextView+ChatRoomController.swift in Sources */,
 				1856F22C1CF01E1F002615F0 /* AppDelegate.swift in Sources */,
+				1862A2781CF20FEA00A3BEDD /* UITableView+ChatRoomController.swift in Sources */,
 				1862A2711CF201D000A3BEDD /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
