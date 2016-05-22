@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Login Controller-->
+        <scene sceneID="ll7-6P-ICf">
+            <objects>
+                <viewController storyboardIdentifier="LoginVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1Sf-7j-LVs" customClass="LoginController" customModule="HootsuiteChat" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Fgy-6y-KMP"/>
+                        <viewControllerLayoutGuide type="bottom" id="Cj4-Ar-cPg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NBi-m3-bNq">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cnw-HB-eaq" customClass="GIDSignInButton">
+                                <rect key="frame" x="180" y="205" width="240" height="43"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="bCx-UE-YEh"/>
+                                    <constraint firstAttribute="height" constant="43" id="o2P-dF-SwN"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aZt-ZJ-CCn">
+                                <rect key="frame" x="180" y="265" width="240" height="43"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Lkh-Gb-Vjg"/>
+                                    <constraint firstAttribute="height" constant="43" id="LoJ-hK-OYh"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="43" id="qxA-1O-82T"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="qxA-1O-82T"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="7IC-rm-nD6">
+                                <rect key="frame" x="180" y="40" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="6DG-Cy-9FE"/>
+                                    <constraint firstAttribute="height" constant="128" id="FyD-zL-bVW"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Cnw-HB-eaq" firstAttribute="top" secondItem="7IC-rm-nD6" secondAttribute="bottom" constant="37" id="Ksm-Kw-8VA"/>
+                            <constraint firstItem="7IC-rm-nD6" firstAttribute="centerX" secondItem="NBi-m3-bNq" secondAttribute="centerX" id="OK9-8S-Tbk"/>
+                            <constraint firstItem="Cnw-HB-eaq" firstAttribute="centerX" secondItem="NBi-m3-bNq" secondAttribute="centerX" id="YRJ-Kc-L8H"/>
+                            <constraint firstItem="aZt-ZJ-CCn" firstAttribute="top" secondItem="Cnw-HB-eaq" secondAttribute="bottom" constant="17" id="bdn-ai-BQZ"/>
+                            <constraint firstItem="aZt-ZJ-CCn" firstAttribute="centerX" secondItem="NBi-m3-bNq" secondAttribute="centerX" id="cF8-OQ-JGT"/>
+                            <constraint firstItem="7IC-rm-nD6" firstAttribute="top" secondItem="Fgy-6y-KMP" secondAttribute="bottom" constant="20" id="gBs-Ev-T4b"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="signInButtonTwitter" destination="aZt-ZJ-CCn" id="3n1-in-bjr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0GB-2B-5a9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="540" y="208"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="220" height="130"/>
+    </resources>
+</document>

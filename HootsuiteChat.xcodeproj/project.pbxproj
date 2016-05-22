@@ -7,12 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18380C681CF01F82009CE9BE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18380C671CF01F82009CE9BE /* GoogleService-Info.plist */; };
 		1856F22C1CF01E1F002615F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1856F22B1CF01E1F002615F0 /* AppDelegate.swift */; };
-		1856F22E1CF01E1F002615F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1856F22D1CF01E1F002615F0 /* ViewController.swift */; };
+		1856F22E1CF01E1F002615F0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1856F22D1CF01E1F002615F0 /* MainViewController.swift */; };
 		1856F2311CF01E1F002615F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1856F22F1CF01E1F002615F0 /* Main.storyboard */; };
 		1856F2331CF01E1F002615F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1856F2321CF01E1F002615F0 /* Assets.xcassets */; };
 		1856F2361CF01E1F002615F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1856F2341CF01E1F002615F0 /* LaunchScreen.storyboard */; };
 		1856F2411CF01E1F002615F0 /* HootsuiteChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1856F2401CF01E1F002615F0 /* HootsuiteChatTests.swift */; };
+		1862A26B1CF1286900A3BEDD /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1862A26A1CF1286900A3BEDD /* Login.storyboard */; };
+		1862A26E1CF12B7B00A3BEDD /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1862A26D1CF12B7B00A3BEDD /* LoginController.swift */; };
+		187924511CF0373B003255F5 /* ChatRoom.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187924501CF0373B003255F5 /* ChatRoom.storyboard */; };
+		187924531CF03A86003255F5 /* ChatRoomController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187924521CF03A86003255F5 /* ChatRoomController.swift */; };
+		187924551CF09734003255F5 /* ChannelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187924541CF09734003255F5 /* ChannelCell.swift */; };
+		187924581CF0C493003255F5 /* ChatTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187924571CF0C493003255F5 /* ChatTextCell.swift */; };
+		429EB8924CD6482957E7E11D /* libPods-HootsuiteChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 64143299E99082A9E017B543 /* libPods-HootsuiteChat.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,9 +34,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18380C671CF01F82009CE9BE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1856F2281CF01E1F002615F0 /* HootsuiteChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HootsuiteChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1856F22B1CF01E1F002615F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1856F22D1CF01E1F002615F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1856F22D1CF01E1F002615F0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		1856F2301CF01E1F002615F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1856F2321CF01E1F002615F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1856F2351CF01E1F002615F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +45,16 @@
 		1856F23C1CF01E1F002615F0 /* HootsuiteChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HootsuiteChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1856F2401CF01E1F002615F0 /* HootsuiteChatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HootsuiteChatTests.swift; sourceTree = "<group>"; };
 		1856F2421CF01E1F002615F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1862A2691CF11E7A00A3BEDD /* HootsuiteChat-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HootsuiteChat-Bridging-Header.h"; sourceTree = "<group>"; };
+		1862A26A1CF1286900A3BEDD /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		1862A26D1CF12B7B00A3BEDD /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		187924501CF0373B003255F5 /* ChatRoom.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ChatRoom.storyboard; sourceTree = "<group>"; };
+		187924521CF03A86003255F5 /* ChatRoomController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatRoomController.swift; sourceTree = "<group>"; };
+		187924541CF09734003255F5 /* ChannelCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelCell.swift; sourceTree = "<group>"; };
+		187924571CF0C493003255F5 /* ChatTextCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTextCell.swift; sourceTree = "<group>"; };
+		372034103B5FAA7782563104 /* Pods-HootsuiteChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HootsuiteChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HootsuiteChat/Pods-HootsuiteChat.debug.xcconfig"; sourceTree = "<group>"; };
+		64143299E99082A9E017B543 /* libPods-HootsuiteChat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HootsuiteChat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF6BFEDE4B37FDD9B8392855 /* Pods-HootsuiteChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HootsuiteChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-HootsuiteChat/Pods-HootsuiteChat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				429EB8924CD6482957E7E11D /* libPods-HootsuiteChat.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +76,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18380C691CF0202C009CE9BE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1862A26C1CF12B6800A3BEDD /* Login */,
+				187924561CF0B53C003255F5 /* ChatRoom */,
+				18380C6B1CF022CE009CE9BE /* Main */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		18380C6A1CF0203C009CE9BE /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				1856F22F1CF01E1F002615F0 /* Main.storyboard */,
+				1856F2341CF01E1F002615F0 /* LaunchScreen.storyboard */,
+				187924501CF0373B003255F5 /* ChatRoom.storyboard */,
+				1862A26A1CF1286900A3BEDD /* Login.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		18380C6B1CF022CE009CE9BE /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				1856F22D1CF01E1F002615F0 /* MainViewController.swift */,
+				187924541CF09734003255F5 /* ChannelCell.swift */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
 		1856F21F1CF01E1F002615F0 = {
 			isa = PBXGroup;
 			children = (
 				1856F22A1CF01E1F002615F0 /* HootsuiteChat */,
 				1856F23F1CF01E1F002615F0 /* HootsuiteChatTests */,
 				1856F2291CF01E1F002615F0 /* Products */,
+				4FCDDC19F9974ECD0B8F7FF7 /* Pods */,
+				34A4DFAC2CB57285911DEC02 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,12 +129,13 @@
 		1856F22A1CF01E1F002615F0 /* HootsuiteChat */ = {
 			isa = PBXGroup;
 			children = (
+				18380C6A1CF0203C009CE9BE /* Storyboards */,
+				18380C691CF0202C009CE9BE /* Controllers */,
 				1856F22B1CF01E1F002615F0 /* AppDelegate.swift */,
-				1856F22D1CF01E1F002615F0 /* ViewController.swift */,
-				1856F22F1CF01E1F002615F0 /* Main.storyboard */,
 				1856F2321CF01E1F002615F0 /* Assets.xcassets */,
-				1856F2341CF01E1F002615F0 /* LaunchScreen.storyboard */,
 				1856F2371CF01E1F002615F0 /* Info.plist */,
+				18380C671CF01F82009CE9BE /* GoogleService-Info.plist */,
+				1862A2691CF11E7A00A3BEDD /* HootsuiteChat-Bridging-Header.h */,
 			);
 			path = HootsuiteChat;
 			sourceTree = "<group>";
@@ -96,6 +149,40 @@
 			path = HootsuiteChatTests;
 			sourceTree = "<group>";
 		};
+		1862A26C1CF12B6800A3BEDD /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				1862A26D1CF12B7B00A3BEDD /* LoginController.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		187924561CF0B53C003255F5 /* ChatRoom */ = {
+			isa = PBXGroup;
+			children = (
+				187924521CF03A86003255F5 /* ChatRoomController.swift */,
+				187924571CF0C493003255F5 /* ChatTextCell.swift */,
+			);
+			name = ChatRoom;
+			sourceTree = "<group>";
+		};
+		34A4DFAC2CB57285911DEC02 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				64143299E99082A9E017B543 /* libPods-HootsuiteChat.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4FCDDC19F9974ECD0B8F7FF7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				372034103B5FAA7782563104 /* Pods-HootsuiteChat.debug.xcconfig */,
+				DF6BFEDE4B37FDD9B8392855 /* Pods-HootsuiteChat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +190,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1856F2451CF01E1F002615F0 /* Build configuration list for PBXNativeTarget "HootsuiteChat" */;
 			buildPhases = (
+				F369259741FC7B53B21F50A5 /* Check Pods Manifest.lock */,
 				1856F2241CF01E1F002615F0 /* Sources */,
 				1856F2251CF01E1F002615F0 /* Frameworks */,
 				1856F2261CF01E1F002615F0 /* Resources */,
+				D21C44A7ABF35F91AD4C383E /* Embed Pods Frameworks */,
+				21CD9900926321A975AE1517 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -178,8 +268,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1856F2361CF01E1F002615F0 /* LaunchScreen.storyboard in Resources */,
+				187924511CF0373B003255F5 /* ChatRoom.storyboard in Resources */,
+				18380C681CF01F82009CE9BE /* GoogleService-Info.plist in Resources */,
 				1856F2331CF01E1F002615F0 /* Assets.xcassets in Resources */,
 				1856F2311CF01E1F002615F0 /* Main.storyboard in Resources */,
+				1862A26B1CF1286900A3BEDD /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,12 +285,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		21CD9900926321A975AE1517 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HootsuiteChat/Pods-HootsuiteChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D21C44A7ABF35F91AD4C383E /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HootsuiteChat/Pods-HootsuiteChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F369259741FC7B53B21F50A5 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1856F2241CF01E1F002615F0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1856F22E1CF01E1F002615F0 /* ViewController.swift in Sources */,
+				187924581CF0C493003255F5 /* ChatTextCell.swift in Sources */,
+				1862A26E1CF12B7B00A3BEDD /* LoginController.swift in Sources */,
+				1856F22E1CF01E1F002615F0 /* MainViewController.swift in Sources */,
+				187924551CF09734003255F5 /* ChannelCell.swift in Sources */,
+				187924531CF03A86003255F5 /* ChatRoomController.swift in Sources */,
 				1856F22C1CF01E1F002615F0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -325,23 +470,27 @@
 		};
 		1856F2461CF01E1F002615F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 372034103B5FAA7782563104 /* Pods-HootsuiteChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HootsuiteChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.reis.HootsuiteChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HootsuiteChat/HootsuiteChat-Bridging-Header.h";
 			};
 			name = Debug;
 		};
 		1856F2471CF01E1F002615F0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF6BFEDE4B37FDD9B8392855 /* Pods-HootsuiteChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HootsuiteChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.reis.HootsuiteChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HootsuiteChat/HootsuiteChat-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -388,6 +537,7 @@
 				1856F2471CF01E1F002615F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1856F2481CF01E1F002615F0 /* Build configuration list for PBXNativeTarget "HootsuiteChatTests" */ = {
 			isa = XCConfigurationList;
@@ -396,6 +546,7 @@
 				1856F24A1CF01E1F002615F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

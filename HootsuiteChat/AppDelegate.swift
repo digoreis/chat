@@ -7,16 +7,75 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
+import TwitterKit
+
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
 
     var window: UIWindow?
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        FIRApp.configure()
+        GIDSignIn.sharedInstance().clientID = FIRApp.defaultApp()!.options.clientID
+        GIDSignIn.sharedInstance().delegate = self
+        
+        Twitter.sharedInstance().startWithConsumerKey("lCN30gPXlT77AcdkJQPEwLeEG", consumerSecret: "JnLnVU6OrtSeUt2bCTgegWtguLLWHIEdWxvYtoZlRKMC7WjJGX")
+    
+        
+        if FIRAuth.auth()?.currentUser == nil {
+            window = UIWindow(frame: UIScreen.mainScreen().bounds)
+            let mainStoryboard = UIStoryboard(name: "Login", bundle: nil)
+            window?.rootViewController = mainStoryboard.instantiateViewControllerWithIdentifier("LoginVC")
+            window?.makeKeyAndVisible()
+        } else {
+            window = UIWindow(frame: UIScreen.mainScreen().bounds)
+            let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            window?.rootViewController = mainStoryboard.instantiateViewControllerWithIdentifier("MainVC")
+            window?.makeKeyAndVisible()
+        }
         return true
+    }
+    
+    func application(app: UIApplication, openURL url: NSURL, options: [String : AnyObject]) -> Bool {
+        return GIDSignIn.sharedInstance().handleURL(url,
+                                                    sourceApplication: options[UIApplicationOpenURLOptionsSourceApplicationKey] as? String,
+                                                    annotation: options[UIApplicationOpenURLOptionsAnnotationKey])
+    }
+    
+    //GOOGLE
+    func signIn(signIn: GIDSignIn!, didSignInForUser user: GIDGoogleUser!,
+                withError error: NSError!) {
+        if let error = error {
+            print(error.localizedDescription)
+            return
+        }
+        let authentication = user.authentication
+        let credential = FIRGoogleAuthProvider.credentialWithIDToken(authentication.idToken,
+                                                                     accessToken: authentication.accessToken)
+        FIRAuth.auth()?.signInWithCredential(credential) { (user, error) in
+            print(error?.description)
+            let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            if let  vc = mainStoryboard.instantiateViewControllerWithIdentifier("MainVC") as? MainViewController {
+                self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+                self.window?.rootViewController = vc
+                self.window?.makeKeyAndVisible()
+            }
+        }
+    }
+    
+    func signIn(signIn: GIDSignIn!, didDisconnectWithUser user:GIDGoogleUser!,
+                withError error: NSError!) {
+        // Perform any operations when the user disconnects from app here.
+        // ...
+    }
+    
+    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
+        return FBSDKApplicationDelegate.sharedInstance().application(application, openURL: url, sourceApplication: sourceApplication, annotation: annotation)
     }
 
     func applicationWillResignActive(application: UIApplication) {
