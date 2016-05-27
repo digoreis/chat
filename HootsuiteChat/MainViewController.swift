@@ -10,7 +10,6 @@ import UIKit
 import Firebase
 import FirebaseDatabase
 import FirebaseAuth
-import Haneke
 
 class MainViewController: UIViewController , UITableViewDelegate , UITableViewDataSource {
     

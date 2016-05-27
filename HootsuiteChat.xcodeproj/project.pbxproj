@@ -26,6 +26,7 @@
 		187924531CF03A86003255F5 /* ChatRoomController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187924521CF03A86003255F5 /* ChatRoomController.swift */; };
 		187924551CF09734003255F5 /* ChannelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187924541CF09734003255F5 /* ChannelCell.swift */; };
 		187924581CF0C493003255F5 /* ChatTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187924571CF0C493003255F5 /* ChatTextCell.swift */; };
+		25EA8161A36443AA96B8D6C2 /* libPods-HootsuiteChatTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B8FA2BAD4FB8042B801657B /* libPods-HootsuiteChatTests.a */; };
 		429EB8924CD6482957E7E11D /* libPods-HootsuiteChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 64143299E99082A9E017B543 /* libPods-HootsuiteChat.a */; };
 /* End PBXBuildFile section */
 
@@ -65,8 +66,11 @@
 		187924541CF09734003255F5 /* ChannelCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelCell.swift; sourceTree = "<group>"; };
 		187924571CF0C493003255F5 /* ChatTextCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTextCell.swift; sourceTree = "<group>"; };
 		372034103B5FAA7782563104 /* Pods-HootsuiteChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HootsuiteChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HootsuiteChat/Pods-HootsuiteChat.debug.xcconfig"; sourceTree = "<group>"; };
+		4B8FA2BAD4FB8042B801657B /* libPods-HootsuiteChatTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HootsuiteChatTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		64143299E99082A9E017B543 /* libPods-HootsuiteChat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HootsuiteChat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8970F13620306BCC3B5D7B39 /* Pods-HootsuiteChatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HootsuiteChatTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HootsuiteChatTests/Pods-HootsuiteChatTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DF6BFEDE4B37FDD9B8392855 /* Pods-HootsuiteChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HootsuiteChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-HootsuiteChat/Pods-HootsuiteChat.release.xcconfig"; sourceTree = "<group>"; };
+		E4C229D1837073894C862C60 /* Pods-HootsuiteChatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HootsuiteChatTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HootsuiteChatTests/Pods-HootsuiteChatTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25EA8161A36443AA96B8D6C2 /* libPods-HootsuiteChatTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				64143299E99082A9E017B543 /* libPods-HootsuiteChat.a */,
+				4B8FA2BAD4FB8042B801657B /* libPods-HootsuiteChatTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -213,6 +219,8 @@
 			children = (
 				372034103B5FAA7782563104 /* Pods-HootsuiteChat.debug.xcconfig */,
 				DF6BFEDE4B37FDD9B8392855 /* Pods-HootsuiteChat.release.xcconfig */,
+				8970F13620306BCC3B5D7B39 /* Pods-HootsuiteChatTests.debug.xcconfig */,
+				E4C229D1837073894C862C60 /* Pods-HootsuiteChatTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -224,12 +232,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1856F2451CF01E1F002615F0 /* Build configuration list for PBXNativeTarget "HootsuiteChat" */;
 			buildPhases = (
-				F369259741FC7B53B21F50A5 /* Check Pods Manifest.lock */,
+				F369259741FC7B53B21F50A5 /* 📦 Check Pods Manifest.lock */,
 				1856F2241CF01E1F002615F0 /* Sources */,
 				1856F2251CF01E1F002615F0 /* Frameworks */,
 				1856F2261CF01E1F002615F0 /* Resources */,
-				D21C44A7ABF35F91AD4C383E /* Embed Pods Frameworks */,
-				21CD9900926321A975AE1517 /* Copy Pods Resources */,
+				D21C44A7ABF35F91AD4C383E /* 📦 Embed Pods Frameworks */,
+				21CD9900926321A975AE1517 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -244,9 +252,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1856F2481CF01E1F002615F0 /* Build configuration list for PBXNativeTarget "HootsuiteChatTests" */;
 			buildPhases = (
+				58EC3EA505E50E5D011C6030 /* 📦 Check Pods Manifest.lock */,
 				1856F2381CF01E1F002615F0 /* Sources */,
 				1856F2391CF01E1F002615F0 /* Frameworks */,
 				1856F23A1CF01E1F002615F0 /* Resources */,
+				CD2E04B9548E1C0BB2A3F3DE /* 📦 Embed Pods Frameworks */,
+				030E3224F5410F03E6D51126 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -320,14 +331,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		21CD9900926321A975AE1517 /* Copy Pods Resources */ = {
+		030E3224F5410F03E6D51126 /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HootsuiteChatTests/Pods-HootsuiteChatTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		21CD9900926321A975AE1517 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -335,14 +361,44 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HootsuiteChat/Pods-HootsuiteChat-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D21C44A7ABF35F91AD4C383E /* Embed Pods Frameworks */ = {
+		58EC3EA505E50E5D011C6030 /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CD2E04B9548E1C0BB2A3F3DE /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HootsuiteChatTests/Pods-HootsuiteChatTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D21C44A7ABF35F91AD4C383E /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -350,14 +406,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HootsuiteChat/Pods-HootsuiteChat-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F369259741FC7B53B21F50A5 /* Check Pods Manifest.lock */ = {
+		F369259741FC7B53B21F50A5 /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "📦 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -536,6 +592,7 @@
 		};
 		1856F2491CF01E1F002615F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8970F13620306BCC3B5D7B39 /* Pods-HootsuiteChatTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = HootsuiteChatTests/Info.plist;
@@ -548,6 +605,7 @@
 		};
 		1856F24A1CF01E1F002615F0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4C229D1837073894C862C60 /* Pods-HootsuiteChatTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = HootsuiteChatTests/Info.plist;
